@@ -1,4 +1,4 @@
-=== Plugin Name ===
+ï»¿=== Plugin Name ===
 Contributors: eddieosi
 Donate link: 
 Tags: adiro,intext,advertisement, ads, advertising, money, werbung
@@ -6,14 +6,14 @@ Requires at least: 3.0.0
 Tested up to: 3.0.1
 Stable tag: 1.2
 
-wpadiro ermöglicht es Ihnen den Adiro InText Code auf einfachste weise in Ihren Wordpress blog zu intigrieren
+wpadiro ermÃ¶glicht es Ihnen den Adiro InText Code auf einfachste weise in Ihren Wordpress blog zu intigrieren
 
 == Description ==
 
-wpadiro ermöglicht es Ihnen den Adiro InText Code auf einfachste weise in Ihren Wordpress blog zu intigrieren
+wpadiro ermÃ¶glicht es Ihnen den Adiro InText Code auf einfachste weise in Ihren Wordpress blog zu intigrieren
 
 Das Plugin wurde mit der Wordpress Version 3.0.1 getestet.
-Falls es dennoch zu Problemen kommt oder es Verbesserungswünsche gibt, benutzen Sie bitte das [Kontaktformular](http://www.adiro.de/kontakt/).
+Falls es dennoch zu Problemen kommt oder es VerbesserungswÃ¼nsche gibt, benutzen Sie bitte das [Kontaktformular](http://www.adiro.de/kontakt/).
 
 Features
 
@@ -35,8 +35,8 @@ Features
 == Installation ==
 
 1. Laden Sie das Verzeichnis wpadiro in das /wp-content/plugins/ Verzeichnis Ihrer WordPress-Installation.
-2. Aktivieren Sie das Plugin über das Menü 'Plugins' in WordPress.
-3. Konfigurieren Sie das Plugin über den neuen Menüpunkt 'wpadiro'.
+2. Aktivieren Sie das Plugin Ã¼ber das MenÃ¼ 'Plugins' in WordPress.
+3. Konfigurieren Sie das Plugin Ã¼ber den neuen MenÃ¼punkt 'wpadiro'.
 
 == Frequently Asked Questions ==
 
@@ -46,15 +46,15 @@ Sie finden die jeweilige Placement ID im bereich 'Webseiten' im [Adiro Publisher
 
 = Wo bekomme ich einen Adiro Benutzerkonto her? =
 
-Falls Sie noch kein Adiro Benutzerkonto besitzen, können Sie sich [hier](http://publisher.adiro.de/register/) kostenlos anmelden.
+Falls Sie noch kein Adiro Benutzerkonto besitzen, kÃ¶nnen Sie sich [hier](http://publisher.adiro.de/register/) kostenlos anmelden.
 
-= Wo bekomme ich weiterführende Hilfe mit meinem Benutzerkonto? =
+= Wo bekomme ich weiterfÃ¼hrende Hilfe mit meinem Benutzerkonto? =
 
-Eine ausführliche FAQ steht Ihnen [hier](http://www.adiro.de/faq/) zur verfügung.
+Eine ausfÃ¼hrliche FAQ steht Ihnen [hier](http://www.adiro.de/faq/) zur verfÃ¼gung.
 
 = Wie kann ich die Ausspielung der Adiro InText Werbung auf bestimmten Seiten verhindern? =
 
-Dazu fügen Sie einfach "&lt;!-- aeNoAds --&gt;" in den HTML quelltext der Seite ein, auf der Sie keine InText Werbung ausspielen wollen.
+Dazu fÃ¼gen Sie einfach "&lt;!-- aeNoAds --&gt;" in den HTML quelltext der Seite ein, auf der Sie keine InText Werbung ausspielen wollen.
 
 = Wie kann ich den Bereich eingrenzen, in dem Adiro InText Werbung erscheinen soll? =
 
@@ -69,22 +69,22 @@ Es gibt zwei HTML Kommentare, die als begrenzer fungieren ("&lt;!-- aeBeginAds -
 == Changelog ==
 
 = 1.2 =
-* Änderung des Pluginnamens in "wpadiro"
-* Unterstützung für die neuen Adiro TAGs hinzugefügt
+* Ã„nderung des Pluginnamens in "wpadiro"
+* UnterstÃ¼tzung fÃ¼r die neuen Adiro TAGs hinzugefÃ¼gt
 * Bugfixing
 
 = 1.1.1 =
-* Filter hinzugefügt
-* InText Konfigurationen hinzugefügt
-* Warnungen und Nachrichten hinzugefügt
+* Filter hinzugefÃ¼gt
+* InText Konfigurationen hinzugefÃ¼gt
+* Warnungen und Nachrichten hinzugefÃ¼gt
 
 = 1.0.2 =
 * Keine Werbung auf "Feed" und "404" Seiten
-* Nachrichten hinzugefügt
+* Nachrichten hinzugefÃ¼gt
 
 = 1.0.1 =
-* Begrenzungskommentare hinzugefügt
-* Administration hinzugefügt
+* Begrenzungskommentare hinzugefÃ¼gt
+* Administration hinzugefÃ¼gt
 
 = 1.0.0 =
 * Initial Version
