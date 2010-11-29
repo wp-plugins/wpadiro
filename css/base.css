@@ -1,0 +1,206 @@
+/*************
+*	Header
+*************/
+.wpadiro_header{
+	height:230px;
+	width:100%;
+	margin-top:30px;
+}
+.wpadiro_header h4{
+	margin:0 !important;
+}
+.wpadiro_title{
+	color:#333C42;
+	font:bold 22px Georgia,"Times New Roman",Times,serif;
+	letter-spacing:-1px;
+	margin:0;
+	padding:0;
+	text-shadow:0 1px 0 #CCCCCC;
+	position:relative;
+	top:10px;
+}
+.wpadiro_head_title{
+	background:url("/wp-admin/images/gray-grad.png") repeat-x scroll left top #DFDFDF;
+	margin-top:10px;
+	padding-left:10px;
+	padding-top:10px:
+	width:100%;
+	height:40px;
+	border:solid 1px #DFDFDF;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-topright:10px;
+}
+#wpadiro_head-title {
+	font: bold 22px Georgia, "Times New Roman", Times, serif;
+	color: #333c42;
+	text-shadow: #deeefa 0 1px 0;
+	letter-spacing: -1px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}  
+.wpadiro_head_title img{
+	height:35px;
+	position:relative;
+	top:2px;
+}
+.wpadiro_head_title_links{
+	top:10px;
+	right: 10px;
+	float:right;
+	position:relative;
+}
+.wpadiro_header_infos{
+	border-left:solid 1px #DFDFDF;
+	border-right:solid 1px #DFDFDF;
+	border-bottom:solid 1px #DFDFDF;
+	-moz-border-radius-bottomleft:10px;
+	-moz-border-radius-bottomright:10px;					
+	height:165px;
+	background-color: #FFFFFF;
+}
+.wpadiro_head_twitter{
+	padding:10px;
+}
+.wpadiro_header_infos_twitter{
+	overflow:auto;
+	height:130px;
+	margin-top:0px;
+	position:relative;
+}
+.wpadiro_header_infos_twitter li{
+	border-bottom:3px double #CCCCCC;
+	padding-bottom:5px;
+}
+.wpadiro_twitter_link{
+	font-size: 10px;
+	border-bottom: dashed 1px #eee;
+}
+
+
+/*************
+* body
+*************/
+.wrap{
+	margin:0 15px 0 5px;
+}
+.wpadiro_formbox_title{
+	width:100%;
+	height:20px;
+	border: solid 1px #CCCCCC;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-topright:10px;
+	float:left;
+	position:relative;
+	background:url("/wp-admin/images/gray-grad.png") repeat-x scroll left top #DFDFDF;
+}
+.wpadiro_formbox_title img{
+	float:left;
+	position:relative;
+	top:4px;
+	left:5px;
+}
+.wpadiro_formbox_title h3{
+	margin:0px !important;
+	font-size:10px;
+	font-family:verdana,Arial;
+	position:relative;
+	left:10px;
+}
+.wpadiro_formbox_content{
+	background:#FFFFFF;
+	width:100%;
+	position:relative;
+	float:left;
+	border: solid 1px #CCCCCC;
+	-moz-border-radius-bottomleft:10px;
+	-moz-border-radius-bottomright:10px;
+}
+
+
+.wpadiro_excluded_phrases{
+	width: 300px;
+	height: 100px;
+	vertical-align:top;
+}
+.wpadiro_excluded_pages{
+	width: 300px;
+	height: 100px;
+}
+.wpadiro_preview_intext{
+	float:left;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.wpadiro_config_intext{
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+.vtop{
+	vertical-align:top;
+}
+.vsuper{
+	vertical-align:super;
+}
+.cls{
+	float:none;
+	clear:both;
+}
+#tweet{
+	background:url("./../img/twitter-wide.png") no-repeat scroll 0 0 transparent;
+	font-family:Verdana,arial,sans-serif;
+	height:90px;
+	margin-left:0;
+	padding-top:40px;
+	width:500px;
+	font-size: 9px;
+	float:left;
+}
+#tweet li {
+	border-bottom:0 solid #EEEEEE;
+	line-height:17px;
+	list-style:none outside none;
+	padding-left:41px;
+	width:220px;
+	font-size: 9px;
+}
+#tweet a{
+	color:#BF272D;
+	font-family:Verdana,arial,sans-serif;
+	font-size:9px;
+	font-weight:bold;
+	text-decoration:none;
+	font-family:Verdana,arial,sans-serif;
+}
+
+#facebook{
+	float:left;
+	height:120px;
+	width:500px;
+	padding-top:9px;
+}
+
+.color-hint{
+	-moz-border-radius:3px 3px 3px 3px;
+	background:none repeat scroll 0 0 #666666;
+	border:medium none;
+	color:#FFFFFF;
+	padding:2px 5px;
+	cursor:pointer;
+}
+.placement-hint{
+	-moz-border-radius:3px 3px 3px 3px;
+	background:none repeat scroll 0 0 #666666;
+	border:medium none;
+	color:#FFFFFF;
+	padding:2px 5px;
+	cursor:pointer;
+}
+.hint-text a{
+	color: #fff;
+}
+#intext_underline{
+	cursor:pointer;
+}

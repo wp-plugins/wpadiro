@@ -1,0 +1,26 @@
+1.2 2010-11-26
+# changed the name to wpadiro
+# changed TAG Support for new adiro TAGs
+# some bugfixes
+1.1.1 2010-03-15
++ Filter
+	- block/unblock searchengine traffic
+	- block/unblock registered user
+	- block/unblock admin user
++ Config
+	- Change Title/Text/Link/Underline colors
+	- Change underline style
+	- Change underline size
++ Added Warnings and success messages
+# Prettyfying the Design
+
+1.0.2 2010-01-20
+# No Ads on feed, 404 and trackbacks
++ Added messages when saving settings
+
+1.0.1 2010-01-14
++ Added Content marker
++ Added Admin Frontend
+
+1.0.0 2010-01-10
++ Initial release.
