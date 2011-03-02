@@ -4,12 +4,11 @@ Plugin Name: Adiro InText Plugin
 Plugin URI: http://www.adiro.de/wordpress-plugin/
 Description: Adiro InText Plugin adds the InText code to your Blog.
 Author: Adiro GmbH
-Version: 1.2
+Version: 1.2.1
 Author URI: http://www.adiro.de/
 */
 
-define("wpadiro_VERSION", 	"1.2");
-define("wpadiro_UPDATEURL", "http://www.adiro.de/wordpress-plugin/updateservice.php");
+define("wpadiro_VERSION", 	"1.2.1");
 define("wpadiro_TAGSTART", 	"<!-- aeBeginAds -->");
 define("wpadiro_TAGEND", 	"<!-- aeEndAds -->");
 define("wpadiro_NO_ADS", 	"<!-- aeNoAds -->");
@@ -222,16 +221,7 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 					return False;
 				return True;
 			}
-			
-			function wpadiro_checkVersion(){
-					$nVersion = "";
-					$nVersion = @file_get_contents(wpadiro_UPDATEURL);
-					if( $nVersion != "" && $nVersion !== wpadiro_VERSION ){
-						$this->message = '<div id="message" class="error"><p><strong>Please update your wpadiro Wordpress Plugin! Your Version: ' . wpadiro_VERSION . ', new Version: <a href="http://www.adiro.de/wordpress-plugin/wpadiro_' . $nVersion . '.zip" target="_blank">' . $nVersion . '</a></strong></p></div>';
-
-					}
-			}
-			
+						
 			function trim_value(&$value) 
 			{ 
 				$value = trim($value); 
@@ -243,8 +233,6 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 			function wpadiro_admin_init(){
 				global $plugin_page;
 				if (strpos($plugin_page, 'wpadiro') !== False && is_plugin_page()) {
-					/* check for Updates */
-					$this->wpadiro_checkVersion();
 					
 					/* register scripts */
 					wp_deregister_script( 'jscolor' );
@@ -296,7 +284,7 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 								  enableLinks: true, 
 								  ignoreReplies: true, 
 								  clearContents: true,
-								  template: '<' + 'a href="http://twitter.com/%user_screen_name%/statuses/%id%/">"%text%"</a>'
+								  template: '<' + 'a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/" target="_blank">"%text%"</a>'
 								});
 								</script>
 								<div id="tweet">

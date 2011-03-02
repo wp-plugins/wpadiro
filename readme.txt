@@ -3,16 +3,14 @@ Contributors: eddieosi
 Donate link: 
 Tags: adiro,intext,advertisement, ads, advertising, money, werbung
 Requires at least: 3.0.0
-Tested up to: 3.0.1
-Stable tag: 1.2
+Tested up to: 3.1
+Stable tag: 1.2.1
 
-wpadiro ermöglicht es Ihnen den Adiro InText Code auf einfachste weise in Ihren Wordpress blog zu intigrieren
+wpadiro ermöglicht es Ihnen, den Adiro InText Code auf einfachste Weise in Ihren WordPress-Blog zu integrieren.
 
 == Description ==
 
-wpadiro ermöglicht es Ihnen den Adiro InText Code auf einfachste weise in Ihren Wordpress blog zu intigrieren
-
-Das Plugin wurde mit der Wordpress Version 3.0.1 getestet.
+Das Plugin wurde mit der Wordpress-Version 3.1 getestet.
 Falls es dennoch zu Problemen kommt oder es Verbesserungswünsche gibt, benutzen Sie bitte das [Kontaktformular](http://www.adiro.de/kontakt/).
 
 Features
@@ -28,7 +26,7 @@ Features
 * Filter
 	* Werbung anzeigen bei Suchmaschinen Besucher
 	* Werbung anzeigen, wenn Benutzer angemeldet ist
-	* Werbung anzeigen, wenn Benutzer Administrator
+	* Werbung anzeigen, wenn Benutzer Administrator ist
 	* Ausschluss von Phrasen (keine Werbung, wenn 'Phrase' im Text vorhanden)
 
 
@@ -42,7 +40,7 @@ Features
 
 = Wo bekomme ich die Placement ID her? =
 
-Sie finden die jeweilige Placement ID im bereich 'Webseiten' im [Adiro Publisher Dashboard](http://publisher.adiro.de)
+Sie finden die jeweilige Placement ID im Bereich 'Webseiten' im [Adiro Publisherbereich](http://publisher.adiro.de)
 
 = Wo bekomme ich einen Adiro Benutzerkonto her? =
 
@@ -50,15 +48,15 @@ Falls Sie noch kein Adiro Benutzerkonto besitzen, können Sie sich [hier](http:/
 
 = Wo bekomme ich weiterführende Hilfe mit meinem Benutzerkonto? =
 
-Eine ausführliche FAQ steht Ihnen [hier](http://www.adiro.de/faq/) zur verfügung.
+Eine ausführliche FAQ steht Ihnen [hier](http://www.adiro.de/faq/) zur Verfügung.
 
-= Wie kann ich die Ausspielung der Adiro InText Werbung auf bestimmten Seiten verhindern? =
+= Wie kann ich die Ausspielung der Adiro InText-Werbung auf bestimmten Seiten verhindern? =
 
-Dazu fügen Sie einfach "&lt;!-- aeNoAds --&gt;" in den HTML quelltext der Seite ein, auf der Sie keine InText Werbung ausspielen wollen.
+Dazu fügen Sie einfach "&lt;!-- aeNoAds --&gt;" in den HTML Quelltext der Seite ein, auf der Sie keine InText-Werbung ausspielen wollen.
 
-= Wie kann ich den Bereich eingrenzen, in dem Adiro InText Werbung erscheinen soll? =
+= Wie kann ich den Bereich eingrenzen, in dem Adiro InText-Werbung erscheinen soll? =
 
-Es gibt zwei HTML Kommentare, die als begrenzer fungieren ("&lt;!-- aeBeginAds --&gt;" Anfagsmarkierung, "&lt;!-- aeEndAds --&gt;" als endmarkierung)
+Es gibt zwei HTML Kommentare, die als Begrenzer fungieren ("&lt;!-- aeBeginAds --&gt;" Anfagsmarkierung, "&lt;!-- aeEndAds --&gt;" als Endmarkierung)
 
 == Screenshots ==
 
@@ -67,6 +65,8 @@ Es gibt zwei HTML Kommentare, die als begrenzer fungieren ("&lt;!-- aeBeginAds -
 3. Filter Konfigurationen
 
 == Changelog ==
+= 1.2.1 =
+* Bugfixing
 
 = 1.2 =
 * Änderung des Pluginnamens in "wpadiro"
