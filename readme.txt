@@ -1,10 +1,10 @@
 ﻿=== Plugin Name ===
-Contributors: eddieosi
+Contributors: Adiro GmbH
 Donate link: 
 Tags: adiro,intext,advertisement, ads, advertising, money, werbung
 Requires at least: 3.0.0
-Tested up to: 3.1
-Stable tag: 1.2.1
+Tested up to: 3.5
+Stable tag: 1.2.2
 
 wpadiro ermöglicht es Ihnen, den Adiro InText Code auf einfachste Weise in Ihren WordPress-Blog zu integrieren.
 

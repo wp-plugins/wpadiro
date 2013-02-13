@@ -4,7 +4,7 @@ Plugin Name: Adiro InText Plugin
 Plugin URI: http://www.adiro.de/wordpress-plugin/
 Description: Adiro InText Plugin adds the InText code to your Blog.
 Author: Adiro GmbH
-Version: 1.2.1
+Version: 1.2.2
 Author URI: http://www.adiro.de/
 */
 
@@ -15,10 +15,13 @@ define("wpadiro_NO_ADS", 	"<!-- aeNoAds -->");
 define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 
 
+$location = $_SERVER['REQUEST_URI'];
+
 	if (!class_exists('wpadiro')) {
 		
 		class wpadiro{
-		
+			var $no_config = false;
+			
 			/********************************************************************************
 			// general functions
 			********************************************************************************/
@@ -78,7 +81,7 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 					$this->pagetype = "category";
 					
 				/* check if there is a $_POST request to save some data */
-				if ($_POST['action'] == 'insert'){
+				if (isset($_POST['action']) && $_POST['action'] == 'insert'){
 					foreach($_POST as $key=>$val){
 						if($key == "excluded_phrases"){
 							$val = explode("\n", $val);
@@ -232,7 +235,7 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 			********************************************************************************/
 			function wpadiro_admin_init(){
 				global $plugin_page;
-				if (strpos($plugin_page, 'wpadiro') !== False && is_plugin_page()) {
+				if (strpos($plugin_page, 'wpadiro') !== False) {
 					
 					/* register scripts */
 					wp_deregister_script( 'jscolor' );
@@ -249,7 +252,7 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 			}
 			
 			function wpadiro_tmpl_header(){
-				if($this->message)
+				if(isset($this->message) && $this->message)
 					echo $this->message;
 				?>
 				
@@ -301,6 +304,7 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 			}
 			
 			function wpadiro_admin_intext(){
+				global $location;
 				?>
 				<div class="wrap">
 				<?
@@ -580,6 +584,7 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 			}
 			
 			function wpadiro_admin_general(){
+				global $location;
 				?>				
 				<script type="text/javascript">
 					jQuery(document).ready(function() {
@@ -627,6 +632,7 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 			}
 			
 			function wpadiro_admin_filter(){
+				global $location;
 				?>
 				<script type="text/javascript">
 					function setSelects(selector, value){
@@ -705,7 +711,7 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 					return;
 					
 				$defaultLayerCode = '<script language="javascript">';
-				$defaultLayerCode .= 'document.write(\'<scr\'+\'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn|3.0|1104|###AFFILIATEID###|0|16|ADTECH;loc=100;target=_blank;AdId=5318882;BnId=1;misc=[timestamp]"></scri\'+\'pt>\');';
+				$defaultLayerCode .= 'document.write(\'<scr\'+\'ipt language="javascript1.1" src="http://adserver.adtech.de/addyn|3.0|1104|###AFFILIATEID###|1|16|ADTECH;loc=100;target=_blank;AdId=5318882;BnId=1;misc=[timestamp]"></scri\'+\'pt>\');';
 				$defaultLayerCode .= '</script>';
 				$defaultLayerCode = str_replace("###AFFILIATEID###", $affiliateid, $defaultLayerCode);
 
@@ -749,10 +755,10 @@ define("wpadiro_CONGIG_NAMESPACE", "Adiro_InText_config");
 
 			// Adminmenu Optionen erweitern
 			function wpadiro_options_add_menu() {
-				add_menu_page('wpadiror', 'wpadiro', 9, __FILE__, array(&$this, 'wpadiro_admin_general'));
-				add_submenu_page(__FILE__, 'Allgemein', 'Allgemein', 9, __FILE__, array(&$this, 'wpadiro_admin_general'));
-				add_submenu_page(__FILE__, 'InText', 'InText', 9, "wpadiro/intext.php");
-				add_submenu_page(__FILE__, 'Filter', 'Filter', 9, "wpadiro/filter.php");
+				add_menu_page('wpadiror', 'wpadiro', "update_plugins", __FILE__, array(&$this, 'wpadiro_admin_general'));
+				add_submenu_page(__FILE__, 'Allgemein', 'Allgemein', "update_plugins", __FILE__, array(&$this, 'wpadiro_admin_general'));
+				add_submenu_page(__FILE__, 'InText', 'InText', "update_plugins", "wpadiro/intext.php");
+				add_submenu_page(__FILE__, 'Filter', 'Filter', "update_plugins", "wpadiro/filter.php");
 				return True;	
 			}
 			
