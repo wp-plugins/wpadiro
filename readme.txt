@@ -10,7 +10,7 @@ wpadiro ermöglicht es Ihnen, den Adiro InText Code auf einfachste Weise in Ihre
 
 == Description ==
 
-Das Plugin wurde mit der Wordpress-Version 3.1 getestet.
+Das Plugin wurde mit der Wordpress-Version 3.5.1 getestet.
 Falls es dennoch zu Problemen kommt oder es Verbesserungswünsche gibt, benutzen Sie bitte das [Kontaktformular](http://www.adiro.de/kontakt/).
 
 Features
