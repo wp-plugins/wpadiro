@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Adiro InText Plugin
-Plugin URI: http://www.adiro.de/wordpress-plugin/
+Plugin URI: http://www.adiro.de/publisher/word-press-plugin/
 Description: Adiro InText Plugin adds the InText code to your Blog.
 Author: Adiro GmbH
 Version: 1.2.2
