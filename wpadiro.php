@@ -257,7 +257,7 @@ $location = $_SERVER['REQUEST_URI'];
 				?>
 				
 				<div class="wpadiro_header">
-					<?
+					<?php
 					/* load css */
 					echo $this->wpadiro_tmpl_css();
 					?>
@@ -300,14 +300,14 @@ $location = $_SERVER['REQUEST_URI'];
 					</div>
 					
 				</div>
-				<?
+				<?php
 			}
 			
 			function wpadiro_admin_intext(){
 				global $location;
 				?>
 				<div class="wrap">
-				<?
+				<?php
 				echo $this->wpadiro_tmpl_header();
 				?>
 				
@@ -580,7 +580,7 @@ $location = $_SERVER['REQUEST_URI'];
 					</div>
 					
 				</div>
-			<?
+			<?php
 			}
 			
 			function wpadiro_admin_general(){
@@ -628,7 +628,7 @@ $location = $_SERVER['REQUEST_URI'];
 					</div>
 					<div class="cls"></div>
 				</div>
-				<?
+				<?php
 			}
 			
 			function wpadiro_admin_filter(){
@@ -645,7 +645,7 @@ $location = $_SERVER['REQUEST_URI'];
 					});
 				</script>
 				<div class="wrap">
-				<?$this->wpadiro_tmpl_header()?>
+				<?PHP $this->wpadiro_tmpl_header(); ?>
 				<div class="wpadiro_formbox_title">
 				<img src='<? echo plugins_url("wpadiro/img/cfg.png"); ?>'>
 					<h3> wpadiro - Filter Konfigurationen</h3>
@@ -698,7 +698,7 @@ $location = $_SERVER['REQUEST_URI'];
 						<div class="cls"></div>
 					</div>
 				</div>
-				<?
+				<?php
 			}
 			
 			

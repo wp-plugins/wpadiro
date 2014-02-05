@@ -4,7 +4,7 @@ Donate link:
 Tags: adiro,intext,advertisement, ads, advertising, money, werbung
 Requires at least: 3.0.0
 Tested up to: 3.8.1
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 
 wpadiro ermöglicht es Ihnen, den Adiro InText Code auf einfachste Weise in Ihren WordPress-Blog zu integrieren.
 
