@@ -3,14 +3,14 @@ Contributors: Adiro GmbH
 Donate link: 
 Tags: adiro,intext,advertisement, ads, advertising, money, werbung
 Requires at least: 3.0.0
-Tested up to: 4.0
+Tested up to: 4.3
 Stable tag: 1.2.3
 
 wpadiro ermöglicht es Ihnen, den Adiro InText Code auf einfachste Weise in Ihren WordPress-Blog zu integrieren.
 
 == Description ==
 
-Das Plugin wurde mit der Wordpress-Version 4.0 getestet.
+Das Plugin wurde mit der Wordpress-Version 4.3 getestet.
 Falls es dennoch zu Problemen kommt oder es Verbesserungswünsche gibt, benutzen Sie bitte das [Kontaktformular](http://www.adiro.de/kontakt/).
 
 Features
